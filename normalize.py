@@ -17,7 +17,3 @@ def normalize(name: str) -> str:
     filename, ext = os.path.splitext(name)
     filename = re.sub(pattern, "_", name.translate(TRANS))
     return filename + ext
-# def normalize(name: str) -> str:
-#     filename, ext = os.path.splitext(name)
-#     filename = re.sub(pattern, "_", name.translate(TRANS))
-#     return filename + ext
