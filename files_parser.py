@@ -66,10 +66,11 @@ def scan(folder: Path):
             MY_OTHER.append(full_name)
         else:
             try:
-                REGISTER_EXTENSION[extension]
+                REGISTER_EXTENSION[extension].append(full_name)
                 EXTENSIONS.add(extension)
             except KeyError:
                 UNKNOWN.add(extension)
+                MY_OTHER.append(full_name)
                 
 if __name__ == "__main__":
     folder_process = sys.argv[1]

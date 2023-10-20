@@ -15,5 +15,5 @@ pattern = r"\W"
 
 def normalize(name: str) -> str:
     filename, ext = os.path.splitext(name)
-    filename = re.sub(pattern, "_", name.translate(TRANS))
-    return filename + ext
+    filename = re.sub(pattern, "_", filename.translate(TRANS))
+    return filename + ext   
