@@ -1,0 +1,2 @@
+[console_scripts]
+clean = Files_sorter.clean:run
